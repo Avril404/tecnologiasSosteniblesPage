@@ -1,0 +1,134 @@
+/* estilos.css */
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #e0f7fa, #ffffff);
+    color: #004d40;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #00bfa5;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+nav, footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+section {
+    padding: 30px 40px;
+    border-bottom: 1px solid #ddd;
+}
+
+h1, h2, h3 {
+    color: #00796b;
+}
+
+p, ul {
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+button {
+    background-color: #00796b;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #004d40;
+}
+
+a {
+    color: #00695c;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.centrado {
+    display: block;
+    margin: 20px auto;
+    max-width: 90%;
+    border-radius: 10px;
+}
+
+footer {
+    background-color: #e0f2f1;
+    padding: 20px;
+    font-size: 14px;
+}
+
+
+/* ANIMACIONES BÁSICAS */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* APLICAMOS ESTAS CLASES */
+.fade-in {
+  animation: fadeInUp 1s ease-out;
+}
+
+.slide-in {
+  animation: slideIn 1s ease-out;
+}
+
+.scale-in {
+  animation: scaleIn 0.8s ease-out;
+}
+
+/* EFECTO PARA BOTONES */
+button:hover {
+  background-color: #004d40;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+a i:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
