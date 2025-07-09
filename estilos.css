@@ -33,6 +33,7 @@ h1, h2, h3 {
 p, ul {
     line-height: 1.6;
     font-size: 18px;
+    text-align: justify;
 }
 
 button {
